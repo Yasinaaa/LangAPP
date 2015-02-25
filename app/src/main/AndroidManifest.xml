@@ -17,8 +17,16 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".RegistrationActivity"
+            android:label="@string/title_activity_sign_in" >
+        </activity>
+        <activity
             android:name=".SignInActivity"
             android:label="@string/title_activity_sign_in" >
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu" >
         </activity>
     </application>
 

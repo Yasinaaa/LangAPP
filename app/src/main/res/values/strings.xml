@@ -14,8 +14,9 @@
         <item name="android:layout_margin">3dp</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textSize">20sp</item>
-
         <item name="android:shadowRadius">1</item>
     </style>
+
+    <string name="title_activity_menu">Menu</string>
 
 </resources>
