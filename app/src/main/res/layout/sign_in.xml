@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -15,9 +15,39 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:padding="10dp"
         >
 
+        <EditText
+            android:id="@+id/etLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_default_bg"
+            android:layout_marginTop="2dp"
+            android:padding="10dp"
+            android:hint="Login"
+            android:textColorHint="#bbbbbb"
+            android:drawableLeft="@drawable/user"/>
+
+        <CheckBox
+            android:id="@+id/cbTeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            />
+        <EditText
+            android:id="@+id/etTeacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_default_bg"
+            android:layout_marginTop="2dp"
+            android:layout_alignBaseline="@+id/cbTeacher"
+            android:layout_alignBottom="@+id/cbTeacher"
+            android:layout_toRightOf="@+id/cbTeacher"
+            android:padding="20dp"
+            android:hint="Teacher"
+            />
         <EditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
@@ -27,16 +57,7 @@
             android:hint="Email"
             android:textColorHint="#bbbbbb"
             android:drawableLeft="@drawable/email"/>
-        <EditText
-            android:id="@+id/etUserName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edittext_default_bg"
-            android:layout_marginTop="-2dp"
-            android:padding="10dp"
-            android:hint="User Name"
-            android:textColorHint="#bbbbbb"
-            android:drawableLeft="@drawable/user"/>
+
         <EditText
             android:id="@+id/etPass"
             android:layout_width="match_parent"
